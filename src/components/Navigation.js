@@ -1,13 +1,13 @@
 import React from "react";
 
-function Navigation() {
+function Navigation(props) {
     return (
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li>Resume</li>
+                <li onClick={(e) => props.changePage(e.target.innerHTML)}>About Me</li>
+                <li onClick={(e) => props.changePage(e.target.innerHTML)}>Portfolio</li>
+                <li onClick={(e) => props.changePage(e.target.innerHTML)}>Contact</li>
+                <li onClick={(e) => props.changePage(e.target.innerHTML)}>Resume</li>
             </ul>
         </nav>
     )
