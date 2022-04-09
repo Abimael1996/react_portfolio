@@ -10,11 +10,25 @@ import { useState } from 'react';
 
 function App() {
   let [page, setPage] = useState('About Me');
+  
+  function highlightTitle (clickedTitle) {
+    // add a class 'highlighted' to the title that was clicked
+    clickedTitle.className = 'highlighted';
+    const titles = clickedTitle.parentElement.children;
+    console.log(titles);
+    // then make sure all of the other titles are NOT 'highlighted'
+    for (const title of titles) {
+      if (title !== clickedTitle) {
+        title.className=''
+      }
+    }
+  }
 
-  function changePage (pageName) {
-    console.log(pageName);
-    setPage(pageName);
-}
+  function changePage (liEl) {
+    console.log(liEl.innerHTML);
+    setPage(liEl.innerHTML);
+    highlightTitle(liEl)  
+  }  
 
   function renderPage() {
     switch(page)
@@ -30,7 +44,7 @@ function App() {
     <div className='content'>
       <header>
         <Header />
-        <Navigation setPage={setPage} changePage={changePage}/>
+        <Navigation page={page} changePage={changePage}/>
       </header>
       <h2>{page}</h2>
       {renderPage()}
