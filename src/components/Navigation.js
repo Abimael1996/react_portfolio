@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function hello() {
+function Navigation() {
     return (
-        <ul>
-            <li>About Me</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
-        </ul>
+        <nav>
+            <ul>
+                <li>About Me</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+                <li>Resume</li>
+            </ul>
+        </nav>
     )
 }
 
-export default hello;
+export default Navigation;
