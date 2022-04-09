@@ -44,7 +44,7 @@ function App() {
     <div className='content'>
       <header>
         <Header />
-        <Navigation page={page} changePage={changePage}/>
+        <Navigation changePage={changePage}/>
       </header>
       <h2>{page}</h2>
       {renderPage()}
