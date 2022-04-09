@@ -1,13 +1,35 @@
 import React from "react";
 
 function Navigation(props) {
+    const titles = [
+        {
+            id: 1,
+            text: 'About Me',
+            class: 'highlighted'
+        },
+        {
+            id: 2,
+            text: 'Portfolio',
+            class: ''
+        },
+        {
+            id: 3,
+            text: 'Contact',
+            class: '',
+        },
+        {
+            id: 4,
+            text: 'Resume',
+            class: ''
+        }
+    ];
+
     return (
         <nav>
             <ul>
-                <li onClick={(e) => props.changePage(e.target)} className='highlighted'>About Me</li>
-                <li onClick={(e) => props.changePage(e.target)}>Portfolio</li>
-                <li onClick={(e) => props.changePage(e.target)}>Contact</li>
-                <li onClick={(e) => props.changePage(e.target)}>Resume</li>
+                {titles.map(title => (
+                <li onClick={(e) => props.changePage(e.target)} className={title.class} key={title.id}>{title.text}</li>)
+                )}
             </ul>
         </nav>
     )
