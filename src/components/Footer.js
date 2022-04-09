@@ -4,11 +4,13 @@ import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-
 
 function Footer() {
     return (
-        <div className='icons'>
-            <a href='https://github.com/Abimael1996' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
-            <a href='https://www.linkedin.com/in/abimael-monarrez/' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} /></a>
-            <FontAwesomeIcon icon={faStackOverflow} />
-        </div>
+        <footer>
+            <div className='icons'>
+                <a href='https://github.com/Abimael1996' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
+                <a href='https://www.linkedin.com/in/abimael-monarrez/' target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} /></a>
+                <FontAwesomeIcon icon={faStackOverflow} />
+            </div>
+        </footer>
     )
 }
 
