@@ -1,8 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
 
-function header () {
+function header() {
     return (
-        <h1>Abimael</h1>
+        <header>
+            <h1>Abimael</h1>
+            <Navigation />
+        </header>
     )
 }
 
