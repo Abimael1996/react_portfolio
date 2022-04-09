@@ -1,24 +1,22 @@
 import './App.css';
-import Navigation from './components/Navigation';
 import Header from './components/Header';
-import Project from './components/Project';
 import Footer from './components/Footer';
+import About from './pages/About';
+import { useState } from 'react';
 
 function App() {
+  let [page, setPage] = useState('About');
+  
+  function handlePage () {
+    if (page === 'About') {
+      return <About />
+    }
+  }
   return (
     <div className='content'>
-      <header>
-        <Header />
-        <nav>
-          <Navigation />
-        </nav>
-      </header>
-      <main>
-        <Project />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Header />
+      {handlePage()}
+      <Footer />
     </div>
   )
 }
