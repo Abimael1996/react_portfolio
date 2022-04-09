@@ -32,6 +32,7 @@ function App() {
         <Header />
         <Navigation setPage={setPage} changePage={changePage}/>
       </header>
+      <h2>{page}</h2>
       {renderPage()}
       <Footer />
     </div>

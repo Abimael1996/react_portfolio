@@ -3,7 +3,6 @@ import React from "react";
 function About() {
     return (
         <div>
-            <h2>About Me</h2>
             <img src='./abimael.jpg' alt="Abimael"></img>
             <p>Hello! I am a Front-end Web Developer leveraging an Entertainment Business background to build an
 engaging user experience on websites related to the Entertainment Industry. <br/><br/>Known as a
