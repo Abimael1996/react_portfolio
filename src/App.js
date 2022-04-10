@@ -13,13 +13,13 @@ function App() {
   
   function highlightTitle (clickedTitle) {
     // add a class 'highlighted' to the title that was clicked
-    clickedTitle.className = 'highlighted';
+    clickedTitle.className = 'navLi highlighted';
     const titles = clickedTitle.parentElement.children;
     console.log(titles);
     // then make sure all of the other titles are NOT 'highlighted'
     for (const title of titles) {
       if (title !== clickedTitle) {
-        title.className=''
+        title.className='navLi'
       }
     }
   }
