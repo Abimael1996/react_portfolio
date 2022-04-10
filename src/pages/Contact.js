@@ -16,7 +16,6 @@ function Contact() {
         }
     }
 
-
     function handleChange(e) {
         if (e.target.name === 'name') {
             setName(e.target.value);
@@ -28,7 +27,6 @@ function Contact() {
     }
 
     function validate(target) {
-        console.log(target);
         if (target === 'textarea') {
             if (validateEmail(email) || email === '') {
                 setDisplay(false)

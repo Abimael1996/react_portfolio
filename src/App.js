@@ -12,11 +12,8 @@ function App() {
   let [page, setPage] = useState('About Me');
   
   function highlightTitle (clickedTitle) {
-    // add a class 'highlighted' to the title that was clicked
     clickedTitle.className = 'navLi highlighted';
     const titles = clickedTitle.parentElement.children;
-    console.log(titles);
-    // then make sure all of the other titles are NOT 'highlighted'
     for (const title of titles) {
       if (title !== clickedTitle) {
         title.className='navLi'
@@ -25,7 +22,6 @@ function App() {
   }
 
   function changePage (liEl) {
-    console.log(liEl.innerHTML);
     setPage(liEl.innerHTML);
     highlightTitle(liEl)  
   }  
