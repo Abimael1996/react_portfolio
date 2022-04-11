@@ -1,19 +1,38 @@
+.title {
+  width: 145px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 896px) {
+  .title {
+    width: fit-content;
+  }
+}
+/* * {
+  color: white;
+}
+
 .content {
-  height: 100vh;
+  background-color: black;
 }
 
 header {
+  background-image: url('../public/images/header.jpeg');
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-h1 {
-  margin-left: 10px;
-}
-
-.navLi {
-  display: inline;
-  margin-right: 10px;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 205px;
 }
 
 .mainContent {
@@ -127,4 +146,4 @@ button {
 footer {
   height: 60px;
 }
-
+ */

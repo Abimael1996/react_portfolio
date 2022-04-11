@@ -12,11 +12,11 @@ function App() {
   let [page, setPage] = useState('About Me');
   
   function highlightTitle (clickedTitle) {
-    clickedTitle.className = 'navLi highlighted';
+    clickedTitle.className = 'mx-3 mx-md-2 display-6 text-primary title';
     const titles = clickedTitle.parentElement.children;
     for (const title of titles) {
       if (title !== clickedTitle) {
-        title.className='navLi'
+        title.className='mx-3 mx-md-2 display-6 title'
       }
     }
   }
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className='content'>
-      <header>
+      <header className='container-fluid d-flex flex-column align-items-center flex-sm-row justify-content-sm-between'>
         <Header />
         <Navigation changePage={changePage}/>
       </header>

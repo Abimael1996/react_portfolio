@@ -5,7 +5,7 @@ function Navigation(props) {
         {
             id: 1,
             text: 'About Me',
-            class: ' highlighted'
+            class: 'text-primary'
         },
         {
             id: 2,
@@ -26,9 +26,9 @@ function Navigation(props) {
 
     return (
         <nav>
-            <ul>
+            <ul className="list-unstyled d-flex flex-column flex-sm-row flex-sm-wrap flex-md-nowrap justify-content-sm-end">
                 {titles.map(title => (
-                <li onClick={(e) => props.changePage(e.target)} className={`navLi${title.class}`}  key={title.id}>{title.text}</li>)
+                <li onClick={(e) => props.changePage(e.target)} className={`display-6 mx-sm-3 mx-md-3 title ${title.class}`} key={title.id}>{title.text}</li>)
                 )}
             </ul>
         </nav>

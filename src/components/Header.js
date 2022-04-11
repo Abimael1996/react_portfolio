@@ -2,7 +2,7 @@ import React from 'react';
 
 function header() {
     return (
-        <h1>Abimael</h1>
+        <h1 className='display-1'>Abimael</h1>
     )
 }
 
