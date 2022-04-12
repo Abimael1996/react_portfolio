@@ -6,9 +6,21 @@
   cursor: pointer;
 }
 
+.svg-inline--fa {
+  height: 50px;
+  margin-right: 50px;
+}
+
+
 @media (min-width: 896px) {
   .title {
     width: fit-content;
+  }
+}
+
+@media (min-width: 576px) {
+  .profile-pic {
+    width: 25%;
   }
 }
 /* * {
@@ -46,11 +58,6 @@ header {
 
 img {
   height: 226px;
-}
-
-.svg-inline--fa {
-  height: 50px;
-  margin-right: 50px;
 }
 
 #portfolio {
