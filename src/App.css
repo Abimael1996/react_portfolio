@@ -6,11 +6,24 @@
   cursor: pointer;
 }
 
-.svg-inline--fa {
-  height: 50px;
+.icons-footer {
+  height: 60px;
   margin-right: 50px;
 }
 
+.icons-links {
+  height: 50px;
+}
+
+.project-container {
+  border: solid black 5px;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  }
+
+.links {
+  border-bottom: solid black 5px;
+  }
 
 @media (min-width: 896px) {
   .title {
@@ -18,11 +31,43 @@
   }
 }
 
-@media (min-width: 576px) {
-  .profile-pic {
-    width: 25%;
+ @media (min-width: 992px) {
+
+  .project-container {
+    height: 475px;
   }
-}
+
+  .content-container {
+   position: relative;
+   height: 100%;
+  }
+
+  /* .div-container {
+    height: 475px;
+    width: 442.5px;
+  }  */
+
+  .links {
+    border: none;
+    position: absolute;
+    top: 100px;
+  }
+
+  .technologies {
+    position: absolute;
+    top: 170px;
+  }
+
+  .description {
+    position: relative;
+    bottom: 250px;
+  } 
+
+  .project-img {
+    height: 100%;
+  }  
+} 
+
 /* * {
   color: white;
 }
