@@ -37,7 +37,7 @@ function App() {
   }
 
   return (
-    <div className='container-fluid d-flex flex-column min-vh-100'>
+    <div className='bg-black text-white container-fluid d-flex flex-column min-vh-100'>
       <header className='d-flex flex-column align-items-center flex-sm-row justify-content-sm-between'>
         <Header />
         <Navigation changePage={changePage}/>

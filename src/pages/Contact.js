@@ -113,8 +113,8 @@ function Contact() {
                     }}>Submit</button>
                 </form>
                 <div className='row justify-content-center'>
-                    <div className="card d-flex flex-column align-items-center my-3 p-2 col-10 col-lg-4">
-                        <h5 className="card-title">Contact Info</h5>
+                    <div className="card bg-light d-flex flex-column align-items-center my-3 p-2 col-10 col-lg-4">
+                        <h5 className="card-title text-black">Contact Info</h5>
                         <div className='d-flex flex-column'>
                             <a href="mailto:abimael.monarrez58@gmail.com" className='mb-3'><FontAwesomeIcon icon={faEnvelope} className='me-2'/>abimael.monarrez58@gmail.com</a>
                             <a href="tel:52-667-420-3849"><FontAwesomeIcon icon={faPhone} className='me-2'/>+56 667 420 3849</a>

@@ -16,7 +16,7 @@ function Project(props) {
                 <h5 className='px-3 description'>{props.description}</h5>
             </div>
 
-            <div className="card bg-dark text-black project-container d-none d-lg-flex">
+            <div className="card bg-dark text-white project-container d-none d-lg-flex">
                 <img src={props.imgLink} className="card-img project-img" alt={props.title} />
                     <div className="card-img-overlay content-container">
                         <h3 className="card-title display-4 links">
