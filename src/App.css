@@ -17,13 +17,12 @@
 
 .project-container {
   border: solid black 5px;
-  border-top-right-radius: 0.25rem;
-  border-top-left-radius: 0.25rem;
-  }
+}
 
 .links {
-  border-bottom: solid black 5px;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
 @media (min-width: 896px) {
   .title {
@@ -35,167 +34,43 @@
 
   .project-container {
     height: 475px;
-  }
-
-  .content-container {
-   position: relative;
-   height: 100%;
-  }
-
-  /* .div-container {
-    height: 475px;
-    width: 442.5px;
-  }  */
-
-  .links {
     border: none;
-    position: absolute;
-    top: 100px;
   }
 
-  .technologies {
-    position: absolute;
-    top: 170px;
+  .project-container:hover .project-img {
+    opacity: 0.5;
   }
 
-  .description {
-    position: relative;
-    bottom: 250px;
-  } 
+  .content-container .links, .technologies {
+    display: none;
+
+  }
+
+  .content-container .description {
+    display: none;
+  }
+  
+  .content-container:hover .links {
+    display: flex;
+  }
+  
+  .content-container:hover .technologies {
+    display: block;
+  }
+
+  .content-container:hover .description {
+    display: block;
+  }
+
+  .title-link, .gh-link {
+    opacity: 0.5;
+  }
+
+  .title-link:hover, .gh-link:hover {
+    opacity: 1;
+  }
 
   .project-img {
     height: 100%;
   }  
-} 
-
-/* * {
-  color: white;
-}
-
-.content {
-  background-color: black;
-}
-
-header {
-  background-image: url('../public/images/header.jpeg');
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 205px;
-}
-
-.mainContent {
-  height: 1000px;
-  position: relative;
-}
-
-.highlighted {
-  color: blue;
-}
-
-img {
-  height: 226px;
-}
-
-#portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.project {
-  height: 300px;
-  width: 500px;
-  margin-top: 20px;
-  border: 5px solid black;
-}
-
-.projectContainer {
-  height: 100%;
-  width: 100%;
-}
-
-.projectImg {
-  height: 100%;
-  width: 100%;
-}
-
-.projectContent {
-  position: relative;
-  bottom: 300px;
-}
-
-.links {
-  display: flex;
-}
-
-.hide {
-  display: none;
-}
-
-.projectContainer:hover img {
-  opacity: 0.5;
-}
-
-.projectContainer:hover .hide {
-  display: block;
-} 
-
-.gHLink  {
-  opacity: 0.5;
-  margin-left: 15px;
-}
-
-.appLink {
-  opacity: 0.5;
-}
-
-.gHLink:hover {
-  opacity: 1;
-}
-
-.appLink:hover {
-  opacity: 1;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-around;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 10px 10px;
-}
-
-input {
-  height: 20px;
-}
-
-button {
-  margin-top: 10px;
-  width: 80px;
-  height: 30px;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-}
-
-footer {
-  height: 60px;
-}
- */
+ }
