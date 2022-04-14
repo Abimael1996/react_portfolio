@@ -9,7 +9,7 @@ function Project(props) {
             <div className='content-container d-lg-none'>
                 <div className='w-100 px-3 links'>
                     <a href={props.appLink} target='_blank' rel='noreferrer' className='text-decoration-none text-reset'><h3 className='display-4 title-link'>{props.title}</h3></a>
-                    <a href={props.gHlink} target='_blank' rel='noreferrer' className='gh-link'><FontAwesomeIcon icon={faGithub} className='icons-links' /></a>
+                    <a href={props.gHlink} target='_blank' rel='noreferrer' className='gh-link text-reset'><FontAwesomeIcon icon={faGithub} className='icons-links' /></a>
                 </div>
                 <p className='px-3 technologies'>{props.technologies}</p>
                 <a href={props.appLink} target='_blank' rel='noreferrer' className='img-container'><img src={props.imgLink} alt={props.title} className='col-12 project-img' /></a>
@@ -19,12 +19,12 @@ function Project(props) {
             <div className="card bg-dark text-white project-container d-none d-lg-flex">
                 <img src={props.imgLink} className="card-img project-img" alt={props.title} />
                     <div className="card-img-overlay content-container">
-                        <h3 className="card-title display-4 links">
+                        <h3 className="card-title display-2 links">
                             <a href={props.appLink} target='_blank' rel='noreferrer' className='text-decoration-none text-reset title-link'>{props.title}</a>
-                            <a href={props.gHlink} target='_blank' rel='noreferrer' className='gh-link'><FontAwesomeIcon icon={faGithub} className='icons-links' /></a>
+                            <a href={props.gHlink} target='_blank' rel='noreferrer' className='gh-link text-reset'><FontAwesomeIcon icon={faGithub} className='icons-links' /></a>
                         </h3>
-                        <p className="card-text technologies">{props.technologies}</p>
-                        <p className="card-text description">{props.description}</p>
+                        <p className="card-text technologies fs-5">{props.technologies}</p>
+                        <p className="card-text description fs-3">{props.description}</p>
                     </div>
             </div>
 

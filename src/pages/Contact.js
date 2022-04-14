@@ -71,9 +71,9 @@ function Contact() {
     }
 
     return (
-        <main className='mainContent'>
-            <div className='contact'>
-                <form>
+        <main>
+            <div className='d-lg-flex flex-lg-wrap justify-content-lg-around'>
+                <form className='col-12 col-lg-6'>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" className="form-label">Name</label>
                         <input
@@ -112,8 +112,8 @@ function Contact() {
                         validate(e.target.localName)
                     }}>Submit</button>
                 </form>
-                <div className='row justify-content-center'>
-                    <div className="card bg-light d-flex flex-column align-items-center my-3 p-2 col-10 col-lg-4">
+                <div className='row justify-content-center contact-info align-self-center'>
+                    <div className="card bg-light d-flex flex-column align-items-center my-3 p-2 col-10 col-lg-12 contact-content">
                         <h5 className="card-title text-black">Contact Info</h5>
                         <div className='d-flex flex-column'>
                             <a href="mailto:abimael.monarrez58@gmail.com" className='mb-3'><FontAwesomeIcon icon={faEnvelope} className='me-2'/>abimael.monarrez58@gmail.com</a>
