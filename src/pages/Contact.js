@@ -105,7 +105,7 @@ function Contact() {
                     <p className={
                         displayAlert
                             ? ''
-                            : 'hide'
+                            : 'd-none'
                     }>{alert}</p>
                     <button type="submit" class="btn btn-light" onClick={(e) => {
                         e.preventDefault();
