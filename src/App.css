@@ -1,3 +1,13 @@
+h1, h2, h3, li {
+  font-family: 'Trebuchet MS, Verdana, sans-serif';
+}
+
+header {
+  background-image: url("../public/images/header.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
 .title:hover {
   cursor: pointer;
 }

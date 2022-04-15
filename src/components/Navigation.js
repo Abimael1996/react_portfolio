@@ -32,7 +32,7 @@ function Navigation(props) {
         //         )}
         //     </ul>
         // </nav>
-        <nav class="navbar navbar-expand-md navbar-light bg-black">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <h1 class="text-white display-1 mx-auto">Abimael</h1>
                 <button class="navbar-toggler toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

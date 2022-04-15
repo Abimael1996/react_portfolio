@@ -2,8 +2,8 @@ import React from 'react';
 
 function Resume() {
     return (
-        <main className='mainContent'>
-            <p>Download my <span><a href='./Abimael-Monarrez-Resume.pdf' target='_blank' download>resume</a></span></p>
+        <main className='ms-4'>
+            <p>Download my full <span><a href='./Abimael-Monarrez-Resume.pdf' target='_blank' download>resume</a></span></p>
             <h3>Front-end Proficiencies</h3>
             <ul>
                 <li>HTML</li>
