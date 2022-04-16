@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Navigation from './components/Navigation';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -38,9 +37,8 @@ function App() {
 
   return (
     <div className='bg-black text-white container-fluid d-flex flex-column min-vh-100'>
-      <header /*className='d-flex flex-column align-items-center flex-sm-row justify-content-sm-between'*/>
+      <header>
         <Header changePage={changePage}/>
-        {/* <Navigation changePage={changePage}/> */}
       </header>
       <h2 className='display-5 m-4 text-center text-md-start'>{page}</h2>
       {renderPage()}

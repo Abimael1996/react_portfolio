@@ -25,13 +25,6 @@ function Navigation(props) {
     ];
 
     return (
-        // <nav>
-        //     <ul className="list-unstyled d-flex flex-column flex-sm-row flex-sm-wrap flex-md-nowrap justify-content-sm-end">
-        //         {titles.map(title => (
-        //             <li onClick={(e) => props.changePage(e.target)} className={`display-6 mx-sm-3 mx-md-3 title ${title.class} text-secondary`} key={title.id}>{title.text}</li>)
-        //         )}
-        //     </ul>
-        // </nav>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <h1 class="text-white display-1 mx-auto">Abimael</h1>
