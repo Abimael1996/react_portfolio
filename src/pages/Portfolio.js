@@ -4,13 +4,22 @@ import Project from '../components/Project';
 function Portfolio() {
     const projects = [
         {
+            imgLink: './images/squad-finder.png',
+            title: 'Squad Finder',
+            gHlink: 'https://github.com/isaacgalvan10/squad-finder',
+            appLink: 'https://serene-dawn-32243.herokuapp.com/',
+            description: "A web app where developers can showcase their new project ideas, or join other people's projects to build a robust portfolio.",
+            technologies: 'React | GraphQL | MongoDB | JavaScript | CSS | HTML',
+            id: 1
+        },
+        {
             imgLink: './images/perfect-meal.png',
             title: 'Perfect Meal',
             gHlink: 'https://github.com/Abimael1996/Perfect_Meal',
             appLink: 'https://thawing-depths-19417.herokuapp.com/',
             description: 'Perfect Meal is a web app that makes nutritionist work easier.',
             technologies: 'Sequelize | Handlebars | Express | JavaScript | CSS | HTML',
-            id: 1
+            id: 2
         },
         {
             imgLink: './images/weather-dashboard.png',
@@ -19,15 +28,6 @@ function Portfolio() {
             appLink: 'https://abimael1996.github.io/weather_dashboard/',
             description: 'This web application allows the user to search for any city and obtain information about its weather.',
             technologies: 'Weather API | JavaScript | CSS | HTML',
-            id: 2
-        },
-        {
-            imgLink: './images/day-planner.png',
-            title: 'Day Planner',
-            gHlink: 'https://github.com/Abimael1996/work_day_scheduler',
-            appLink: 'https://abimael1996.github.io/work_day_scheduler/',
-            description: 'This project consists of a calendar application that allows a user to save events for each hour of a working schedule (9 to 5).',
-            technologies: 'jQuery | JavaScript | CSS | HTML',
             id: 3
         },
         {
