@@ -22,15 +22,6 @@ function Contact() {
 
     const [formErrors, setFormErrors] = useState({});
 
-    // function validateEmail(emailAdress) {
-    //     const regexEmail = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    //     if (emailAdress.match(regexEmail)) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
-
     const validate = (values) => {
         const errors = {};
         const emailRegex = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -53,52 +44,6 @@ function Contact() {
         }
         return errors;
     };
-
-    // function handleChange(e) {
-    //     if (e.target.name === 'name') {
-    //         setName(e.target.value);
-    //     } else if (e.target.name === 'email') {
-    //         setEmail(e.target.value);
-    //     } else {
-    //         setMessage(e.target.value);
-    //     }
-    // }
-
-    // function validate(target) {
-    //     if (target === 'textarea') {
-    //         if (validateEmail(email) || email === '') {
-    //             setDisplay(false)
-    //         } else {
-    //             setDisplay(true);
-    //             setAlert('Your email is invalid.')
-    //         }
-    //     } else if (target === 'button') {
-    //         if (validateEmail(email) && name !== '' && message !== '') {
-    //             setDisplay(true);
-    //             setAlert(`Message sent! I'll be back to you as soon as possible, ${name} :)`);
-    //             handleSubmit();
-    //             return true
-    //         } else {
-    //             if (!validateEmail(email)) {
-    //                 if (email === '') {
-    //                     setDisplay(true);
-    //                     setAlert('Email is required.')
-    //                 } else {
-    //                     setDisplay(true);
-    //                     setAlert('Your email is invalid.')
-    //                 }
-    //             } else if (name === '') {
-    //                 setDisplay(true);
-    //                 setAlert('Name is required.')
-    //             } else if (message === '') {
-    //                 setDisplay(true);
-    //                 setAlert('Message is required.')
-    //             }
-    //         }
-    //     } else {
-    //         setDisplay(false);
-    //     }
-    // }
 
     function handleSubmit(e) {
         e.preventDefault();
